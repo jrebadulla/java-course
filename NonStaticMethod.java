@@ -1,15 +1,21 @@
 class Mobile {
 
     String brand;
-    int price;    // Instance variable
+    int price; // Instance variable
     static String name; // Static variable share all the objects
 
-    public void show() { // local variable
+    public void show() { // Non - static method
         System.out.println(brand + " : " + price + " : " + name);
     }
+
+    public static void show1(Mobile m) { // static method, cannot accept non static variable. should do inderectly
+        System.out.println(m.brand + " : " + m.price + " : " + name);
+
+    }
+
 }
 
-public class StaticMethod {
+public class NonStaticMethod {
 
     public static void main(String[] args) {
 
@@ -25,5 +31,7 @@ public class StaticMethod {
 
         m1.show();
         m2.show();
+
+        Mobile.show1(m1);
     }
 }
