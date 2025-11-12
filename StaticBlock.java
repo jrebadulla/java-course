@@ -32,10 +32,10 @@ public class StaticBlock {
     public static void main(String[] args) throws ClassNotFoundException {
 
         Class.forName("Mobile");
-        // Mobile m1 = new Mobile();
-        // m1.brand = "Apple";
-        // m1.price = 20000;
-        // Mobile.name = "Iphone 7";
+        Mobile m1 = new Mobile();
+        m1.brand = "Apple";
+        m1.price = 20000;
+        Mobile.name = "Iphone 7";
 
         // Mobile m2 = new Mobile();
 
