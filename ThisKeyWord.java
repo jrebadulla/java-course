@@ -9,8 +9,8 @@ class Human {
         return age;
     }
 
-    public void setAge(int name) { // local variable
-        this.age = name; // this - refers to a current object
+    public void setAge(int age) { // local variable
+        this.age = age; // this - refers to a current object
     }
 
     public String getName() {
